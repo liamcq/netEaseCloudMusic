@@ -1,0 +1,29 @@
+.playlist-square .playlists {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.playlist-square .playlist-item {
+    text-align: center;
+}
+
+.playlist-square .playlist-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.playlist-square .playlist-item .title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.playlist-square .playlist-item .play-count {
+    color: #888;
+    font-size: 14px;
+}
+
+.item-title a.playlist-link:hover {
+    color: #e1e1e1;
+    text-decoration: none;
+}

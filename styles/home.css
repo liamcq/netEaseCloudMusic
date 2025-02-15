@@ -1,0 +1,192 @@
+/* styles/home.css */
+/* ===== 原始轮播图尺寸 ===== */
+.banner-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.banner-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner-container {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    background: #f5f5f5;
+}
+
+/* 轮播项 */
+.banner-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner-item.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.banner-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.banner-indicator.active {
+    background: #fff;
+}
+
+.banner-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.banner-control.prev {
+    left: 15px;
+}
+
+.banner-control.next {
+    right: 15px;
+}
+
+.recommend-section {
+    width: 1000px;
+    margin: 40px auto;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.recommend-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.recommend-item {
+    position: relative;
+    height: 230px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recommend-item:hover {
+    transform: translateY(-5px);
+}
+
+.cover-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.info-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 2;
+}
+
+.item-title {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 5px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.item-artist {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recommend-item .item-title a {
+    color: #e1e1e1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.recommend-item .item-title a:hover {
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+.item-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 3;
+}

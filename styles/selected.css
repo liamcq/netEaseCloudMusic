@@ -1,0 +1,44 @@
+.category-buttons {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+    padding: 5px 60px;
+    justify-content: center;
+}
+
+.category-btn {
+    width: 82px;
+    height: 36px;
+    border: 1px solid #e0e0e0;
+    border-radius: 18px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #ec4141;
+    color: #fff;
+    border-color: #ec4141;
+}
+
+.page-title {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    padding-left: 60px;
+}
+
+a.playlist-link {
+    color: #e1e1e1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.artist {
+    color: #e1e1e1;
+    font-size: 14px;
+}

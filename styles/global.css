@@ -1,0 +1,20 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    position: fixed;
+    top: 60px;
+    left: 240px;
+    right: 0;
+    bottom: 82px;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌单详情</title>
+    <link rel="stylesheet" href="../styles/playlist-detail.css">
+</head>
+
+<body>
+    <main>
+        <p class="page-title">歌单详情</p>
+        <div class="playlist-detail">
+            <div class="playlist-cover">
+                <img src="${playlist.coverImgUrl}" alt="歌单封面" class="cover">
+            </div>
+            <div class="playlist-info">
+                <p class="playlist-title">歌单标题</p>
+                <p class="playlist-author">歌单作者</p>
+                <p class="playlist-description">歌单描述</p>
+                <button type="button" class="play-btn">播放全部</button>
+            </div>
+        </div>
+        <div class="playlist-songs">
+            <div class="playlist-songs-header">
+                <span class="song-index">#</span>
+                <span class="song-title">歌曲</span>
+                <span class="song-artist">歌手</span>
+                <span class="song-album">专辑</span>
+                <span class="song-duration">时长</span>
+            </div>
+            <!-- 歌曲列表将由 playlist-detail.js 动态插入 -->
+        </div>
+    </main>
+</body>
+
+</html>

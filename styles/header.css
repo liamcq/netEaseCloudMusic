@@ -1,0 +1,33 @@
+/* 头部样式 */
+header#header {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    right: 0;
+    height: 60px;
+    background-color: transparent;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+#header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 0;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
